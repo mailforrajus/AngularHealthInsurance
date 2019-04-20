@@ -1,0 +1,39 @@
+<!--<h3 appMyColor> Caseworkers Info</h3>
+
+<table>
+  <tr>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Email </td>
+    <td>Phone Number</td>
+    <td>Password</td>
+    <td>Action</td>
+  </tr>
+  <tr *ngFor="let casrwoker of caseworkersResult">
+    <td>{{casrwoker.firstName}}</td>
+    <td>{{casrwoker.lastName}}</td>
+    <td>{{casrwoker.email}}</td>
+    <td>{{casrwoker.phno}}</td>
+    <td>{{casrwoker.pwd}}</td>
+    <td>
+      <a (click)="editCaseWorker(casrwoker.email)">Edit</a>
+      /
+      <div *ngIf="casrwoker.activeSw=='Y'">
+        <a (click)="deactivateCaseWorker(casrwoker.email)">Delete</a>
+      </div>
+      <div *ngIf="casrwoker.activeSw=='N'">
+        <a (click)="activateCaseWorker(casrwoker.email)">Activate</a>
+      </div>
+
+
+    </td>
+  </tr>
+</table>
+<h3>{{currentPageNumber}}</h3>
+<h3>{{totalPages}}</h3>-->
+
+<ag-grid-angular 
+	style="width: 500px; height: 500px;" 
+	class="ag-theme-balham"
+	[rowData]="rowData" >
+</ag-grid-angular>
